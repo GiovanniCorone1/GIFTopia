@@ -1,0 +1,35 @@
+.formulario{
+  display: flex;
+  justify-content:center;
+  gap: 1rem;
+}
+.input{
+  all: unset;
+  width: 50%;
+  border: 2px solid  rgb(29, 54, 88);
+  border-radius:20px ;
+  padding: 2rem;
+  font-size: 2rem;
+  transition-property: border;
+  transition-duration: .2s;
+}
+.input:hover{
+  border: 2px solid  rgb(68, 122, 156);
+}
+.input::placeholder{
+  color: rgb(68, 122, 156);
+}
+.boton{
+  all: unset;
+  background-color: rgb(29, 54, 88);
+  padding:2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size:2rem;
+  transition-property:background-color ;
+  transition-duration: .3s;
+}
+.boton:hover{
+  background-color: rgb(68, 122, 156);
+}

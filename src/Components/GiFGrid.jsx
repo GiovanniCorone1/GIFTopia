@@ -1,26 +1,28 @@
 
 import { GifItem } from "./GifItem"
 import { useFetchGifs } from "../Hook/useFetchGifs";
+import styles from './GifGrid.module.css'
 export const GifGrid = ({category}) => {
 const {images , isLoading} = useFetchGifs(category)
-// console.log(images)
 return (
-  <>
-  <h2>{category}</h2>
+  <div className="main__contenedor">
+
+  <h2 className={styles.texto}>{category}</h2>
   {
     isLoading && <h2>Cargando ... </h2>
   }
   {/* El grid de las cards */}
-  <div>
+  <div className={styles.grid}>
     {
-      images.map((image)=>{
+      images.map((image)=>
         <GifItem
         key={image.id}
         {...image}
         />
-      })
+      )
     } 
   </div>
-  </>
+ 
+  </div>
 )
 }

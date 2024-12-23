@@ -6,7 +6,7 @@ const Giftopia=()=> {
   const [ categories ,setCategories] = useState(['one puch man'])
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return ;
-    setCategories([...categories , newCategory])
+    setCategories([newCategory ,...categories ])
   }
   return (
     <>
@@ -18,7 +18,6 @@ const Giftopia=()=> {
       Siempre debemos buscar que el padre reciba las propiedades y no la contrario*/}
       <AddCategory onNewCategory={e=>onAddCategory(e)}/>
       {/* grid de las categorias */}
-      <ol>
         {categories.map((category) => 
           <GifGrid
           key={category}
@@ -26,7 +25,7 @@ const Giftopia=()=> {
           />
         )
         }
-      </ol>
+      
     </>
   )
 }

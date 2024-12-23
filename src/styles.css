@@ -37,8 +37,7 @@ img {
 [class*="__contenedor"]{
   max-width:120rem;
   margin: 0 auto;
-  padding: 0 2rem;  /* Padding fijo para pantallas grandes */
-    
+  padding: 0 2rem;  /* Padding fijo para pantallas grandes */    
     @media (max-width: 768px) {
         padding: 0 5%;  /* Padding proporcional para móviles */
     }

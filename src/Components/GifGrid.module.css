@@ -1,0 +1,10 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  column-gap: 3rem;
+}
+
+.texto{
+  color:rgb(29, 54, 88);
+  text-transform: uppercase;
+}
