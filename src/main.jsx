@@ -5,6 +5,8 @@ import Giftopia from './Giftopia'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+  
       <Giftopia/>
-  </StrictMode>,
+
+      </StrictMode>,
 )
