@@ -1,0 +1,46 @@
+*{
+  font-family: 'Inconsolata','Roboto';
+  --color-primary:rgb(29, 54, 88);
+  --color-secundary:rgb(68, 122, 156);
+}
+html{
+  font-size:62.5%; 
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 4.6rem;
+}
+h3{
+  font-size: 3rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+[class$="__heading"]{
+  text-align: center;
+  color: transparent;
+  font-size: 4.5rem;
+  font-weight: 900;
+  background-image: linear-gradient(to right ,var(--color-primary) ,var(--color-secundary));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+[class*="__contenedor"]{
+  max-width:120rem;
+  margin: 0 auto;
+  padding: 0 2rem;  /* Padding fijo para pantallas grandes */
+    
+    @media (max-width: 768px) {
+        padding: 0 5%;  /* Padding proporcional para móviles */
+    }
+}
+
