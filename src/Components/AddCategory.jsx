@@ -1,5 +1,7 @@
-import { useState } from "react"
-import styles from './AddCategory.module.css'
+import { useState } from "react";
+import styles from './AddCategory.module.css';
+import {ThemeToggle} from './ThemeToggle';
+import { RiMoonFill } from "@remixicon/react";
 export const AddCategory = ({onNewCategory}) => {
   const [inputValue ,setInputValue] = useState('');
   const onInputChange = ({target})=>{
@@ -13,14 +15,14 @@ export const AddCategory = ({onNewCategory}) => {
     setInputValue('')
   }
   return (
-    <div className="formulario__contenedor">
+    <div className={`formulario__contenedor ${styles.contenido}`}>
     <form 
     className={styles.formulario}
     onSubmit={(e)=>onSubmit(e)}>
       <input 
       className={styles.input}
       type="text" 
-      placeholder="Ingrese una categoria"
+      placeholder="Ingrese una categoría"
       value={inputValue}
       onChange={e=>onInputChange(e)}
      />
@@ -29,6 +31,7 @@ export const AddCategory = ({onNewCategory}) => {
       onClick={(e)=>onSubmit(e)} 
       >Buscar</button>
     </form>
+    <ThemeToggle/>
     </div>
   )
 }
