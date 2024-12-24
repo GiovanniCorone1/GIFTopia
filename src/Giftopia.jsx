@@ -3,7 +3,7 @@ import { AddCategory } from "./Components/AddCategory"
 import { GifGrid } from "./Components/GiFGrid"
 
 const Giftopia=()=> {
-  const [ categories ,setCategories] = useState(['one puch man'])
+  const [ categories ,setCategories] = useState(['navidad'])
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return ;
     setCategories([newCategory ,...categories ])
