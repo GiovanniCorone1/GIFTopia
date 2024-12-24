@@ -43,3 +43,7 @@ img {
         padding: 0 5%;  /* Padding proporcional para móviles */
     }
 }
+.darkMode{
+  background-color: black;
+  color: white;
+}

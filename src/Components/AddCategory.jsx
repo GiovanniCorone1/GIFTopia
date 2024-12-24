@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from './AddCategory.module.css';
 import {ThemeToggle} from './ThemeToggle';
-import { RiMoonFill } from "@remixicon/react";
 export const AddCategory = ({onNewCategory}) => {
   const [inputValue ,setInputValue] = useState('');
   const onInputChange = ({target})=>{
