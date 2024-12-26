@@ -22,6 +22,5 @@ export const ThemeToggle = () => {
     <RiMoonFill 
     onClick={onThemeToggle}
     className={`${styles.icono} ${styles.iconoBlack}`}/>
-  
   )
 }
