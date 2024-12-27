@@ -6,7 +6,6 @@
 html{
   font-size:62.5%; 
   box-sizing: border-box;
-  /* background-color: #121212; */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -38,9 +37,9 @@ img {
 [class*="__contenedor"]{
   max-width:120rem;
   margin: 0 auto;
-  padding: 0 2rem;  /* Padding fijo para pantallas grandes */    
+  padding: 0 2rem;      
     @media (max-width: 768px) {
-        padding: 0 5%;  /* Padding proporcional para móviles */
+        padding: 0 5%;  
     }
 }
 .darkMode{

@@ -9,7 +9,6 @@ return (
   {
     isLoading && <h2>Cargando ... </h2>
   }
-  {/* El grid de las cards */}
   <div className={styles.grid}>
     {
       dataGif.map((data)=>

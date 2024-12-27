@@ -1,4 +1,4 @@
-import { RiHeartFill ,RiLinksFill } from "@remixicon/react";
+import { RiLinksFill } from "@remixicon/react";
 import styles from './GifItem.module.css'
 import { useState } from "react";
 export const GifItem =({title , url})=>{
@@ -14,11 +14,9 @@ export const GifItem =({title , url})=>{
     })
   }
   return (
-    // para una card
     <div className={styles.card}>
       <img className={styles.imagen} src={url} alt={title} />
       <div className={styles.iconos}>
-      {/* <RiHeartFill className={`${styles.icono} ${styles.iconoHeart}`} /> */}
       <a onClick={copyUrl}>
       <RiLinksFill className={`${styles.icono} ${styles.iconoLink}`}/>
       </a>
