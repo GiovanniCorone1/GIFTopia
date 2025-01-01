@@ -7,8 +7,3 @@ Además, el sitio ofrece la opción de activar el modo oscuro para una experienc
 ### Requisitos
 - Node.js
 - NPM o Yarn
-
-### Requisitos
-- Node.js
-- NPM o Yarn
-- Otros requisitos del proyecto

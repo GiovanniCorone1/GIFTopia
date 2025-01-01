@@ -16,17 +16,17 @@ export const AddCategory = ({onNewCategory}) => {
     <div className={`formulario__contenedor ${styles.contenido}`}>
     <form 
     className={styles.formulario}
-    onSubmit={(e)=>onSubmit(e)}>
+    onSubmit={onSubmit}>
       <input 
       className={styles.input}
       type="text" 
       placeholder="Ingrese una categoría"
       value={inputValue}
-      onChange={e=>onInputChange(e)}
+      onChange={onInputChange}
      />
       <button 
       className={styles.boton}
-      onClick={(e)=>onSubmit(e)} 
+      onClick={onSubmit} 
       >Buscar</button>
     </form>
     <ThemeToggle/>
