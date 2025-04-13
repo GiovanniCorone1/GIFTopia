@@ -2,7 +2,7 @@ import { useState } from "react"
 import { AddCategory } from "./Components/AddCategory"
 import { GifGrid } from "./Components/GiFGrid"
 const Giftopia=()=> {
-  const [ categories ,setCategories] = useState(['año nuevo'])
+  const [ categories ,setCategories] = useState(['felicidad'])
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return ;
     setCategories([newCategory ,...categories ])
